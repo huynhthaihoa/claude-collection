@@ -18,6 +18,7 @@
 - One tack per subagent for focused execution
 
 ### 4. Self-Improvement Loop
+- Keep the user in the loop: for ANY non-trivial/sensitive task, make sure to ask the user for official confirmation/decision before execution
 - After ANY correction from the user: update `tasks/lessons.md` with the pattern (append, not overwrite)
 - Write rules for yourself that prevent the same mistake
 - Ruthlessly iterate on these lessons until mistake rate drops
@@ -28,6 +29,7 @@
 - Diff behavior between main and your changes when relevant
 - Ask yourself: "Would a staff engineer approve this?"
 - Run tests, check logs, demonstrate correctness
+- In case some issue happens before/during the verification, inform the user to make a decision
 
 ### 6. Demand Elegance (Balanced)
 - For non-trivial changes: pause and ask "is there a more elegant way?"
@@ -39,7 +41,7 @@
 - When given a bug report: fix it. Don't ask for hand-holding
 - Point at logs, errors, failing tests - then resolve them
 - Zero context switching required from the user
-- Fix failing CI tests without being told how
+- Go fix failing CI tests without being told how
 
 ### 8. Conclusion
 - Summarize your updates and/or observations into `tasks/summary.md` (append, not overwrite)
