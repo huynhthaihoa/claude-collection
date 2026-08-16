@@ -1,25 +1,15 @@
-## Task Management
-
-1. **Plan First**: Write an execution plan to `tasks/todo.md` with checkable items (append, not overwrite)
-2. **Verify Plan**: Check in before starting implementation
-3. **Track Progress**: Mark items complete as you go
-4. **Explain Changes**: High-level summary at each step
-5. **Document Results**: Append a review section to `tasks/todo.md`
-6. **Capture Lessons**: Append `tasks/lessons.md` for lessons learned after corrections
-7. **Summarize Work**: Append `tasks/summary.md` for summarizing updates after finishing the task
-
 ## Workflow Orchestration
 
 ### 1. Warm up
 
 - Start the response with "Hi hoaht"
-- Review the old materials in directory `tasks` (if exists) to retrieve the context of the previous sessions
+- If the `tasks` directory does not exist yet, make it. Otherwise, review every material in `tasks` to retrieve the context of the previous sessions
 
 ### 2. Plan Node Default
 - Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
 - If something goes sideways, STOP and re-plan immediately - don't keep pushing
 - Use plan mode for verification steps, not just building
-- Write detailed specs upfront into `tasks/todo.md` to reduce ambiguity (append, not overwrite)
+- Write detailed specifications of your plan upfront into `tasks/todo.md` to reduce ambiguity (append, not overwrite)
 
 ### 3. Subagent Strategy
 - Use subagents liberally to keep main context window clean
@@ -46,13 +36,23 @@
 - Challenge your own work before presenting it
 
 ### 7. Autonomous Bug Fixing
-- When given a bug report: just fix it. Don't ask for hand-holding
+- When given a bug report: fix it. Don't ask for hand-holding
 - Point at logs, errors, failing tests - then resolve them
 - Zero context switching required from the user
-- Go fix failing CI tests without being told how
+- Fix failing CI tests without being told how
 
 ### 8. Conclusion
-- Summarize the updates and/or observations into `tasks/summary.md` (append, not overwrite)
+- Summarize your updates and/or observations into `tasks/summary.md` (append, not overwrite) before finishing your response.
+
+## Task Management
+
+1. **Plan First**: Write an execution plan to `tasks/todo.md` with checkable items (append, not overwrite)
+2. **Verify Plan**: Check in before starting implementation
+3. **Track Progress**: Mark items complete as you go
+4. **Explain Changes**: High-level summary at each step
+5. **Document Results**: Append a review section to `tasks/todo.md`
+6. **Capture Lessons**: Append `tasks/lessons.md` for lessons learned after corrections
+7. **Summarize Work**: Append `tasks/summary.md` for summarizing updates after finishing the task
 
 ## Core Principles
 
