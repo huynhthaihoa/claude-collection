@@ -42,7 +42,7 @@
 - Fix failing CI tests without being told how
 
 ### 8. Conclusion
-- Summarize your updates and/or observations into `tasks/summary.md` (append, not overwrite) before finishing your response.
+- Summarize your updates and/or observations into `tasks/summary.md` (append, not overwrite)
 
 ## Task Management
 
@@ -50,9 +50,8 @@
 2. **Verify Plan**: Check in before starting implementation
 3. **Track Progress**: Mark items complete as you go
 4. **Explain Changes**: High-level summary at each step
-5. **Document Results**: Append a review section to `tasks/todo.md`
-6. **Capture Lessons**: Append `tasks/lessons.md` for lessons learned after corrections
-7. **Summarize Work**: Append `tasks/summary.md` for summarizing updates after finishing the task
+5. **Capture Lessons**: Append `tasks/lessons.md` for lessons learned after corrections
+6. **Summarize Work**: Append `tasks/summary.md` for summarizing updates/observation
 
 ## Core Principles
 
