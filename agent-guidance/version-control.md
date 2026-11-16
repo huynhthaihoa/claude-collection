@@ -1,0 +1,102 @@
+# Git workflow
+
+Personal harness maintenance targets personal repositories and ignored local
+entry points. Project discovery does not authorize tracked project changes or
+publication; obtain explicit project-scope authority. [PR work](#pr-branch-synchronization)
+carries its own commit and push authority. Before staging or publishing
+personal changes, read [PUBLICATION.md](../PUBLICATION.md).
+Disclosure-reviewed instruction updates in dotfiles and shared skills use `main`
+directly, without a PR. This selects the branch, not publication authority.
+
+For project feature branches, use `sunho/` unless the user or higher-priority
+instructions specify another name. Never add co-author trailers.
+
+## Worktrees and existing changes
+
+Use the primary checkout. Worktrees are limited to static analysis or documentation
+at a specific HEAD; builds and device tests stay in the current session checkout.
+A dirty checkout is not a reason to create a worktree. Before preparing a remote
+experiment checkout, read [the private team policy](team-development.md) for
+applicable lifecycle rules and scoped standing authorization. Discard or overwrite
+existing work only within an explicit user-authorized scope. Before destructive
+cleanup, verify exclusive checkout use and preserve active inputs; unresolved
+ownership or a live workload consuming affected files blocks cleanup.
+
+By default, preserve existing work: handle task-input changes in place, otherwise
+stash relevant tracked/untracked files or commit and push on an appropriate branch
+under the repository's rules. Before a blocked branch switch outside an authorized
+cleanup scope, commit locally or stash. Restore stashes when safe at task completion
+and report restoration conflicts.
+
+## Rebases
+
+After rebasing onto a base that absorbed other changes, re-review every conflict
+resolution and every auto-merged hunk against the intent of the upstream changes
+it absorbed. A clean merge does not establish semantic compatibility. Adapt to the
+new upstream design rather than working around it, and check whether the branch
+should adopt conventions the upstream introduced. Report a conflict between that
+design and the branch's own layering to the user before changing either.
+
+## Pull requests
+
+Resolve a review thread only if its root author is an automated agent and the
+concern is addressed and pushed. Leave human-authored roots open for a person,
+even after implementing the requested change.
+
+Before creating or updating a PR, inspect its full intended diff for unnecessary
+environment settings in code, launch scripts, configuration, and documentation.
+Remove temporary experiment/debug variables with their readers, exports, fallback
+branches, and instructions. Expose only necessary variables defined by external
+packages, verified against the installed version. Validate affected behavior
+without the removed settings.
+
+## PR validation
+
+Complete validation by presenting results that compare Base and This PR for the
+changed behavior or benefit. Choose evidence appropriate to the change; a fix
+does not need a performance experiment unless it claims a performance benefit.
+Use the [PR evidence contracts](../skills/write-technical-pr/references/evidence.md)
+for the comparison, its measured revisions, and its presentation.
+
+Before further verification, identify what decision it could change and whether
+existing results, code inspection, or arithmetic already decide it. Weigh its
+value against the author's time, other users' access to devices, and the delay
+for people waiting for the implementation. Prefer the smallest check that can
+resolve a material uncertainty; refreshing numbers with no change to the core
+conclusion does not justify another experiment. Required correctness coverage and
+repository-enforced checks still apply.
+
+After a later rebase or force-push, assume completed experiments remain valid.
+A changed hash or a possible change in the size of a gain does not by itself
+invalidate the comparison or require a rerun. Revisit it for a concrete functional
+concern or when a reviewer requests current results, within the task's execution
+authority. Use normal code review, including the rebase review above, to identify
+such concerns; do not add a separate equivalence-proof requirement.
+
+When a concern exists, the author checks the affected code with the smallest
+relevant test. Keep routine rebase checks and their history out of the PR
+description. If evidence shows that a retained result no longer supports the
+claim, update that result or narrow the claim and state any material remaining
+limitation. Finish with a concise account of the problem, core change, and
+supported Base-versus-This-PR outcome that lets a reviewer decide quickly.
+
+## PR branch synchronization
+
+PR work is a change to the user's branch that backs an open PR, or to one the
+current task is authorized to submit as a PR. Unless the user asks for local-only
+work or no commit/push, it carries these duties without per-change approval:
+
+- Commit coherent units of the PR's intended change after their applicable checks.
+  Stage only those files; leave temporary experiment or debug edits uncommitted.
+- Push to the PR branch so no commit stays unpushed for more than about an hour
+  or past the end of the task. Push at natural pauses; do not wait for CI or
+  reviewers, or add checks solely for the push.
+- When a push changes the behavior, scope, or supported conclusion described in
+  the PR, update the description under `write-technical-pr`'s publication rules,
+  running its review alongside continuing work. A new head hash alone requires
+  neither a description update nor new measurements; preserve measured revisions
+  under the PR validation rule above.
+
+Force-push and other history rewrites, merges, and pushes to other branches keep
+their existing authorization. If a push is rejected or would need one of them,
+report the blocker instead of forcing it.

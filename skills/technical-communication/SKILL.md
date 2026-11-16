@@ -74,9 +74,9 @@ from code, read [domain research](../../agent-guidance/domain-research.md). Veri
 the semantic fit before building an explanation around it; reuse sufficient prior
 research. This reference also applies when this skill is loaded in isolation.
 
-For an explicit STE compliance request, inspect the requested edition of the
+<!-- For an explicit STE compliance request, inspect the requested edition of the
 standard and the pinned [SimpleEnglish reference](../simple-english/skills/simple-english/SKILL.md).
 Do not infer compliance from the skill's branding or apply word substitutions
 that change meaning. For deliberate maintenance of this skill, consult selected
 rules or examples from SimpleEnglish or [humanizer](../humanizer/SKILL.md) and
-test the proposed change. Neither reference is a routine writing pass.
+test the proposed change. Neither reference is a routine writing pass. -->
