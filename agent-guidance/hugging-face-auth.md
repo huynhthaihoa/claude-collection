@@ -6,7 +6,7 @@ values. Verify persistent authentication with those overrides absent.
 
 If the stored credential is missing or invalid, report the authentication
 prerequisite. Synchronize it only when the user explicitly requests HF credential
-setup, repair or synchronization; daily and generic agent refreshes do not fetch
+setup, repair, or synchronization; daily and generic agent refreshes do not fetch
 or apply private credentials. For that authorized action, read the canonical
 [HF synchronization](../skills/agent-update/references/private-hf.md),
 which requires the common private synchronization protocol.
@@ -17,7 +17,7 @@ or save plaintext outside the standard Hugging Face store and its protected
 recovery backups. The installer locates the HF CLI's Python runtime, uses its
 configured credential paths and verifies mode 0600 and authentication.
 
-Missing enrollment, tools, decryption access or failed verification is a reported
+Missing enrollment, tools, decryption access, or failed verification is a reported
 prerequisite failure. Do not fall back to historical public ciphertext, another
-host's private keys, interactive login or token creation. Token rotation and
+host's private keys, interactive login, or token creation. Token rotation and
 changes to the recipient population require explicit authorization.

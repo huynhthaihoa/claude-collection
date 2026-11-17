@@ -1,6 +1,6 @@
 # Git workflow
 
-Personal harness maintenance targets personal repositories and ignored local
+Personal harness maintenance targets personal repositories and ignores local
 entry points. Project discovery does not authorize tracked project changes or
 publication; obtain explicit project-scope authority. [PR work](#pr-branch-synchronization)
 carries its own commit and push authority. Before staging or publishing
@@ -22,7 +22,7 @@ existing work only within an explicit user-authorized scope. Before destructive
 cleanup, verify exclusive checkout use and preserve active inputs; unresolved
 ownership or a live workload consuming affected files blocks cleanup.
 
-By default, preserve existing work: handle task-input changes in place, otherwise
+By default, preserve existing work: handle task-input changes in place; otherwise
 stash relevant tracked/untracked files or commit and push on an appropriate branch
 under the repository's rules. Before a blocked branch switch outside an authorized
 cleanup scope, commit locally or stash. Restore stashes when safe at task completion
@@ -87,15 +87,15 @@ current task is authorized to submit as a PR. Unless the user asks for local-onl
 work or no commit/push, it carries these duties without per-change approval:
 
 - Commit coherent units of the PR's intended change after their applicable checks.
-  Stage only those files; leave temporary experiment or debug edits uncommitted.
+ Stage only those files; leave temporary experiment or debug edits uncommitted.
 - Push to the PR branch so no commit stays unpushed for more than about an hour
-  or past the end of the task. Push at natural pauses; do not wait for CI or
-  reviewers, or add checks solely for the push.
+ or past the end of the task. Push at natural pauses; do not wait for CI or
+ reviewers, or add checks solely for the push.
 - When a push changes the behavior, scope, or supported conclusion described in
-  the PR, update the description under `write-technical-pr`'s publication rules,
-  running its review alongside continuing work. A new head hash alone requires
-  neither a description update nor new measurements; preserve measured revisions
-  under the PR validation rule above.
+ the PR, update the description under `write-technical-pr`'s publication rules,
+ running its review alongside continuing work. A new head hash alone requires
+ neither a description update nor new measurements; preserve measured revisions
+ under the PR validation rule above.
 
 Force-push and other history rewrites, merges, and pushes to other branches keep
 their existing authorization. If a push is rejected or would need one of them,

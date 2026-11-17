@@ -10,8 +10,7 @@ Resolve `checkout` and `repository_url` literally from
 `~/.config/agent-update/private-sync.json`. Require an exact origin URL match.
 With existing repository authentication, fetch `origin/main`, record the commit,
 and read `server-notices.md` using `git show <commit>:server-notices.md`.
-Do not alter a dirty checkout, branch, or remote. Failed fetch cannot be replaced
-by cached references. The private document owns the notice source and search
+Do not alter a dirty checkout, branch, or remote. Cached references cannot replace a failed fetch. The private document owns the notice source and search
 procedure; keep its identifiers, contents, and task evidence out of public files.
 
 Missing registration, document, or source access pauses affected server work,

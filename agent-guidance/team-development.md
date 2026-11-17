@@ -20,7 +20,7 @@ Keep team settings out of public guidance. Apply relevant sections alongside
 public API, writing, and reasoning guidance. A policy may record explicit
 user-approved scopes, such as cleanup targets or figure uploads; it does not
 otherwise authorize remote execution or publication. For isolated reviewers,
-supply applicable sections and the source revision; leaves report missing
+supply applicable sections and the source revision; leave report missing
 context without accessing unrelated private configuration. Reuse an inspected
 revision within the same unchanged task scope; recheck before work after a
 substantial pause or changed resources.

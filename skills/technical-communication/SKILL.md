@@ -1,6 +1,6 @@
 ---
 name: technical-communication
-description: Use to write, revise, or assess technical documents and substantial engineering explanations or result reports. Preserve meaning, evidence, and the reader's decision. Not for ordinary short replies, standalone style polishing, or auditing the agent's conduct; PR and handoff workflows retain their own contracts.
+description: Use to write, revise, or assess technical documents and substantial engineering explanations or results reports. Preserve meaning, evidence, and the reader's decision. Not for ordinary short replies, standalone style polishing, or auditing the agent's conduct; PR and handoff workflows retain their own contracts.
 ---
 
 # Technical communication

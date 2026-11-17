@@ -85,5 +85,5 @@ A profiler-enabled process must open one mesh and close it only after all cases
 and profiler drains finish. Closing then reopening can hang initialization.
 Cases can share that lifetime only with compatible device configuration.
 For independent configurations or function-scoped pytest fixtures, expose
-separately invocable nodes and run each exact parameterized node in a fresh
+invocable nodes separately and run each exact parameterized node in a fresh
 Tracy process.
