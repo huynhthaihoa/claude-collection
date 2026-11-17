@@ -22,4 +22,4 @@ Do this incrementally with each step instead of all at once at the end. Before m
 
 - Quiz them with open-ended or multiple-choice questions with **AskUserQuestion** (be sure to change up the order of the correct answer, and to not reveal the answer until after the questions are submitted). After they answer, provide direct, honest feedback and ask them to explain their reasoning. If they get it wrong, help them understand why and have them try again with some additional context, hint, or examples. Show them code/figures/text or have them use the debugger if necessary! Regardless of the user's answer, provide the correct answer and explain why it is correct in detail.
 
-- `/goal` the session should not end until you've verified that the user has demonstrated that they understood everything on your list.
+- `/goal` the stage or the session should not end until you've verified that the user has demonstrated that they understood everything on your list.
