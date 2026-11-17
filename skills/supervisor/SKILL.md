@@ -20,6 +20,6 @@ Do this incrementally with each step instead of all at once at the end. Before m
 
 - To get a sense of where they're at, proactively have them restate their understanding first. Then help them fill in the gaps from there—they might ask you questions or ask to **eli5** (explain like they're a 5-year-old child), **eli14** (explain like they're a 14-year-old child), or **elii** (explain like they're an intern).
 
-- Quiz them with open-ended or multiple-choice questions with **AskUserQuestion** (be sure to change up the order of the correct answer, and to not reveal the answer until after the questions are submitted). Show them code or have them use the debugger if necessary!
+- Quiz them with open-ended or multiple-choice questions with **AskUserQuestion** (be sure to change up the order of the correct answer, and to not reveal the answer until after the questions are submitted). After they answer, provide direct, honest feedback and ask them to explain their reasoning. If they get it wrong, help them understand why and have them try again. Show them code/figures/text or have them use the debugger if necessary! Regardless of the user's answer, provide the correct answer and explain why it is correct in detail.
 
 - `/goal` the session should not end until you've verified that the user has demonstrated that they understood everything on your list.
