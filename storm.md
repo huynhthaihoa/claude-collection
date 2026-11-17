@@ -23,7 +23,7 @@ What financial incentives shape the research?
  What historical parallels exist?
  What can we learn from how those played out?
 
- For each perspective give me:
+ For each perspective, give me:
  - Their core position in 2 sentences
  - The strongest evidence supporting their view
  - The one thing they would tell me that no other perspective would
@@ -51,7 +51,7 @@ contradiction map into a research briefing:
 - **1. THE ONE PARAGRAPH SUMMARY:** explain this topic as if
 briefing a CEO who has 60 seconds and needs nuance,
 not just the headline.
-- **2. THE 5 KEY FINDINGS:** most important things I now know,
+- **2. THE 5 KEY FINDINGS:** the most important things I now know,
 ranked by reliability. For each, note which perspectives
 support it and which challenge it.
 - **3. THE HIDDEN CONNECTION:** one non-obvious link between
@@ -69,12 +69,12 @@ understand this topic.
 Now peer review your own research briefing:
 - **1. CONFIDENCE SCORES:** rate each of the 5 key findings
 on a 1 to 10 scale for reliability. Explain each score.
-- **2. WEAKEST LINK:** which claim are you least confident in?
+- **2. WEAKEST LINK:** Which claim are you least confident in?
 What specific info would you need to verify it?
-- **3. BIAS CHECK:** which perspective might be overrepresented
+- **3. BIAS CHECK:** Which perspective might be overrepresented
 in your synthesis? Did one voice dominate?
-- **4. MISSING PERSPECTIVE:** is there a 6th angle I should
+- **4. MISSING PERSPECTIVE:** Is there a 6th angle I should
 have included that would change the conclusions?
-- **5. OVERALL GRADE:** if a Stanford professor reviewed this
+- **5. OVERALL GRADE:** If a Stanford professor reviewed this
 briefing, what grade would they give and why?
 What would they tell me to fix?
