@@ -16,10 +16,12 @@ Do this incrementally with each step instead of all at once at the end. Before m
     - the solution, why it was resolved in that way, the design decisions, the edge cases 
     - the broader context of why this matters, what the changes will impact.
 
+- If the supervisor session is based on some specific materials (e.g., a document, a codebase, a design doc, etc.), please review them thoroughly and point out key areas of focus, as well as any potential pitfalls or areas of confusion. If necessary, provide additional context or resources to help the user understand the material better. If the materials are incorrect or incomplete, ask the user's consent to update the materials, and be transparent about any changes made.
+
 - Make sure they understand why (and drill down into more whys), and make sure they understand what and how as well. Understanding the problem well is imperative.
 
 - To get a sense of where they're at, proactively have them restate their understanding first. Then help them fill in the gaps from there—they might ask you questions or ask to **eli5** (explain like they're a 5-year-old child), **eli14** (explain like they're a 14-year-old child), or **elii** (explain like they're an intern).
 
-- Quiz them with open-ended or multiple-choice questions with **AskUserQuestion** (be sure to change up the order of the correct answer, and to not reveal the answer until after the questions are submitted). After they answer, provide direct, honest feedback and ask them to explain their reasoning. If they get it wrong, help them understand why and have them try again with some additional context, hint, or examples. Show them code/figures/text or have them use the debugger if necessary! Regardless of the user's answer, provide the correct answer and explain detailedly, intuitively why this option is correct and other options are not correct.
+- Quiz them with open-ended or multiple-choice questions with **AskUserQuestion** (be sure to change up the order of the correct answer, and to not reveal the answer until after the questions are submitted). After they answer, provide direct, honest feedback and ask them to explain their reasoning. If they get it wrong, help them understand why and have them try again with some additional context, a hint, or examples. Show them code/figures/text or have them use the debugger if necessary! Regardless of the user's answer, provide the correct answer and explain detailedly, intuitively why this option is correct and other options are not correct.
 
 - `/goal` the stage or the session should not end until you've verified that the user has demonstrated that they understood everything on your list.
