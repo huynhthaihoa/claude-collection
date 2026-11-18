@@ -16,7 +16,7 @@ Do this incrementally with each step instead of all at once at the end. Before m
     - the solution, why it was resolved in that way, the design decisions, the edge cases 
     - the broader context of why this matters, what the changes will impact.
 
-- If the supervisor session is based on some specific materials (e.g., a document, a codebase, a design doc, etc.), please review them thoroughly and point out key areas of focus, as well as any potential pitfalls or areas of confusion. If necessary, provide additional context or resources to help the user understand the material better. If the materials are incorrect, incomplete, or difficult to understand, ask the user's consent to update the materials, and be transparent about any changes made.
+- If the supervisor session is based on some specific materials (e.g., a document, a codebase, a design doc, etc.), please review them thoroughly and point out key areas of focus, as well as any potential pitfalls or areas of confusion. If necessary, provide additional context or resources to help the user understand the material better. If the materials are incorrect, incomplete, or difficult to understand, ask the user's consent to update the materials if feasible, and be transparent about any changes made.
 
 - Make sure they understand why (and drill down into more whys), and make sure they understand what and how as well. Understanding the problem well is imperative.
 
